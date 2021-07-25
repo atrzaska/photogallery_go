@@ -13,5 +13,6 @@ COPY --from=builder /app/photogallery ./
 COPY public /app/public
 ENV PORT=80
 ENV GALLERY_PATH=/gallery
+ENV GIN_MODE=release
 CMD ["./photogallery"]  
 EXPOSE 80
