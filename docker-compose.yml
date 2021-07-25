@@ -1,0 +1,10 @@
+version: "2.1"
+
+services:
+  photogallery:
+    image: andrzejtrzaska/photogallery
+    container_name: photogallery
+    volumes:
+      - ~/Pictures:/gallery
+    ports:
+      - 4000:80

@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  background: black;
+}
+
+#picture {
+  height: 100vh;
+}
