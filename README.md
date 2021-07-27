@@ -1,7 +1,7 @@
 # Photogallery
 
 Simple go gin application that serves images from your drive in a presentation mode in your browser.
-This is a rewrite of https://github.com/atrzaska/photogallery_js in go in order to reduce docker image size.
+This is a rewrite of https://github.com/atrzaska/photogallery_js in go in order to reduce docker image size. Docker image is only 7MB compressed.
 I was looking for some simple photo gallery viewer app in github and I decided to create something myself that is simply serving gallery from a given folder in a browser.
 This is usefull when you want to show your local images in for example chromecast.
 
@@ -27,6 +27,10 @@ This is usefull when you want to show your local images in for example chromecas
     open http://localhost:4000
     
 This will serve your `~/Pictures` folder by default
+
+You can also use prebuilt docker image from dockerhub.
+
+    docker run andrzejtrzaska/photogallery -v ~/Pictures:/gallery -p 4000:80
 
 ## License
 
