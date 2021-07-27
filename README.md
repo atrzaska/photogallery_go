@@ -28,7 +28,7 @@ This is usefull when you want to show your local images in for example chromecas
     
 This will serve your `~/Pictures` folder by default
 
-You can also use prebuilt docker image from dockerhub.
+You can also use prebuilt docker image from dockerhub https://hub.docker.com/repository/docker/andrzejtrzaska/photogallery.
 
     docker run andrzejtrzaska/photogallery -v ~/Pictures:/gallery -p 4000:80
 
