@@ -73,7 +73,7 @@ function onKeyUp(e) {
 const main = async () => {
   images = await fetch('/images').then((res) => res.json())
   document.addEventListener('keyup', onKeyUp)
-  picture.addEventListener('click', (e) => next())
+  document.addEventListener('click', next)
   next()
 }
 
