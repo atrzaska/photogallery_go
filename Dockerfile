@@ -7,12 +7,12 @@ RUN go mod download
 COPY *.go ./
 RUN go build
 
-FROM alpine:latest  
+FROM alpine:latest
 WORKDIR /app
 COPY --from=builder /app/photogallery ./
 COPY public /app/public
 ENV PORT=80
 ENV GALLERY_PATH=/gallery
 ENV GIN_MODE=release
-CMD ["./photogallery"]  
+CMD ["./photogallery"]
 EXPOSE 80
